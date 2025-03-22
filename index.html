@@ -24,7 +24,9 @@
         <div id="div_resultados_hexadecimal"></div>
         <br />
         <div id="div_resultados_hexadecimal_caixaColorida">
-          Converte um número decimal e a sua cor hexadecimal aparecerá aqui
+          <p id="div_resultados_hexadecimal_caixaColorida_caixaTexto">
+            Converte um número decimal e a sua cor hexadecimal aparecerá aqui
+          </p>
         </div>
       </div>
     </main>
@@ -33,9 +35,11 @@
 <script>
   function converterNumero() {
     var decimal = Number(ipt_numeroDecimal.value);
-
     div_resultados_binario.innerHTML = decimal.toString(2);
     div_resultados_octal.innerHTML = decimal.toString(8);
     div_resultados_hexadecimal.innerHTML = decimal.toString(16);
+    div_resultados_hexadecimal_caixaColorida_caixaTexto.innerHTML = `<p style = 'background-color: #${decimal.toString(
+      16
+    )}'>${decimal.toString(16)}</p>`;
   }
 </script>

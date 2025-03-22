@@ -4,3 +4,26 @@ main {
   text-align: center;
   align-items: center;
 }
+
+#div_resultados_hexadecimal_caixaColorida {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  width: 15rem;
+  background-color: grey;
+  border: solid black 0.25rem;
+  border-radius: 1rem;
+}
+
+#div_resultados_hexadecimal_caixaColorida p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 13rem;
+  width: 13rem;
+}
