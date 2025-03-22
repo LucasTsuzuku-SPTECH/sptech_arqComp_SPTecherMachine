@@ -3,24 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculadora Arq. Comp. Pedro e Lucas</title>
+    <link href="/style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Sptecher's Machine</h1>
-    <h3>Digite um número decimal:</h3>
-    <input type="number" id="ipt_numeroDecimal" />
-    <br />
-    <br />
-    <button onclick="converterNumero()">Converter</button>
-    <div id="div_resultados">
-      <h3>Resultados:</h3>
-      <p>Binário:</p>
-      <div id="div_resultados_binario"></div>
-      <p>Octal:</p>
-      <div id="div_resultados_octal"></div>
-      <p>Hexadecimal:</p>
-      <div id="div_resultados_hexadecimal"></div>
-    </div>
+    <main>
+      <h1>Sptecher's Machine</h1>
+      <h3>Digite um número decimal:</h3>
+      <input type="number" id="ipt_numeroDecimal" />
+      <br />
+      <br />
+      <button onclick="converterNumero()">Converter</button>
+      <div id="div_resultados">
+        <h3>Resultados:</h3>
+        <p>Binário:</p>
+        <div id="div_resultados_binario"></div>
+        <p>Octal:</p>
+        <div id="div_resultados_octal"></div>
+        <p>Hexadecimal:</p>
+        <div id="div_resultados_hexadecimal"></div>
+        <br />
+        <div id="div_resultados_hexadecimal_caixaColorida">
+          Converte um número decimal e a sua cor hexadecimal aparecerá aqui
+        </div>
+      </div>
+    </main>
   </body>
 </html>
 <script>
