@@ -1,8 +1,17 @@
+body{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F4F1DE;
+  color: #3D405B;
+}
+
 main {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  
 }
 
 #div_resultados_hexadecimal_caixaColorida {
@@ -13,9 +22,10 @@ main {
   justify-content: center;
   height: 15rem;
   width: 15rem;
-  background-color: grey;
+  background-color: #81B29A;
   border: solid black 0.25rem;
   border-radius: 1rem;
+  color: #FFFFFF;
 }
 
 #div_resultados_hexadecimal_caixaColorida p {
@@ -26,4 +36,5 @@ main {
   align-items: center;
   height: 13rem;
   width: 13rem;
+  border-radius: 1rem;
 }
