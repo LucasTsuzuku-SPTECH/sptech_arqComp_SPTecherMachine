@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora Arq. Comp. Pedro e Lucas</title>
-    <link href="/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -20,15 +23,16 @@
       <div id="div_resultados">
         <h3>Resultados:</h3>
         <p>Binário:</p>
-        <div id="div_resultados_binario"></div>
+        <div id="div_resultados_binario"><br /></div>
         <p>Octal:</p>
-        <div id="div_resultados_octal"></div>
+        <div id="div_resultados_octal"><br /></div>
         <p>Hexadecimal:</p>
-        <div id="div_resultados_hexadecimal"></div>
+        <div id="div_resultados_hexadecimal"><br /></div>
         <br />
         <div id="div_resultados_hexadecimal_caixaColorida">
           <p id="div_resultados_hexadecimal_caixaColorida_caixaTexto">
-            Coloque um número entre 0 e 16.777.215 e a sua cor hexadecimal aparecerá aqui
+            Coloque um número entre 0 e 16.777.215 e a sua cor hexadecimal
+            aparecerá aqui
           </p>
         </div>
       </div>
@@ -38,11 +42,26 @@
 <script>
   function converterNumero() {
     var decimal = Number(ipt_numeroDecimal.value);
-    div_resultados_binario.innerHTML = decimal.toString(2);
-    div_resultados_octal.innerHTML = decimal.toString(8);
-    div_resultados_hexadecimal.innerHTML = decimal.toString(16);
-    div_resultados_hexadecimal_caixaColorida_caixaTexto.innerHTML = `<p style = 'background-color: #${decimal.toString(
-      16
-    )}'>${decimal.toString(16)}</p>`;
+    var binario = decimal.toString(2);
+    var octal = decimal.toString(8);
+    var hexadecimal = decimal.toString(16);
+    var zeroHexadecimalColorido = "";
+    var contador = 1;
+    div_resultados_binario.innerHTML = binario;
+    div_resultados_octal.innerHTML = octal;
+    div_resultados_hexadecimal.innerHTML = hexadecimal;
+
+    console.log(hexadecimal.length);
+
+    while (contador <= 6 - hexadecimal.length) {
+      zeroHexadecimalColorido += "0";
+      contador++;
+    }
+
+    console.log(zeroHexadecimalColorido + hexadecimal);
+
+    div_resultados_hexadecimal_caixaColorida_caixaTexto.innerHTML = `<p style = 'background-color: #${
+      zeroHexadecimalColorido + hexadecimal
+    }'>#${zeroHexadecimalColorido + hexadecimal}</p>`;
   }
 </script>
