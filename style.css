@@ -41,6 +41,7 @@ button:hover {
   justify-content: center;
   height: auto;
   width: auto;
+  margin-bottom: 25px;
 }
 
 #div_resultados_hexadecimal_caixaColorida p {
@@ -57,3 +58,52 @@ button:hover {
   color: #ffffff;
   margin: 0;
 }
+
+footer {
+  background-color: #3d405b; /* Fundo escuro para destacar o rodapé */
+  color: white; /* Texto branco para melhor contraste */
+  text-align: center;
+}
+
+/* distância entre o conteúdo da tag e as suas bordas*/
+.interface {
+  padding: 10px;
+}
+
+.line-footer1 h3 {
+  font-size: 18px;
+}
+
+.line-footer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-line-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre os itens */
+  margin-bottom: 10px;
+}
+
+/* Ajustando tamanho da imagem */
+.box-line-footer img {
+  width: 30px; 
+  height: 30px;
+  opacity: 0.7;
+}
+
+/* Edita os links para o GitHub */
+.box-line-footer a {
+  color: white;
+  text-decoration: none; /* Tira o sublinhado do texto */
+  font-size: 16px; 
+}
+
+/* Texto de copyright */
+.line-footer2 p {
+  font-size: 14px;
+  opacity: 0.7; 
+}
+
