@@ -37,6 +37,7 @@ button:hover {
 #ipt_numeroDecimal {
   height: 0.5rem;
   width: 20rem;
+  border: solid #3d405b 0.2rem;
   border-radius: 1rem;
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
