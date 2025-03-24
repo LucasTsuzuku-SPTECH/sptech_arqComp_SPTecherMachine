@@ -18,7 +18,6 @@
       <h3>Digite um número decimal:</h3>
       <input type="number" id="ipt_numeroDecimal" />
       <br />
-      <p></p>
       <button onclick="converterNumero()">Converter</button>
       <div id="div_resultados">
         <h3>Resultados:</h3>
@@ -30,13 +29,10 @@
         <div id="div_resultados_hexadecimal"><br /></div>
         <br />
         <div id="div_resultados_hexadecimal_caixaColorida">
-          <p
-            id="div_resultados_hexadecimal_caixaColorida_caixaTexto"
-            style="background-color: #81b29a"
-          >
+          <span id="div_resultados_hexadecimal_caixaColorida_caixaTexto">
             Coloque um número entre 0 e 16.777.215 e a sua cor hexadecimal
             aparecerá aqui
-          </p>
+          </span>
         </div>
       </div>
     </main>
@@ -61,9 +57,9 @@
 
     var hexadecimalCor = zeroHexadecimalColorido + hexadecimal;
     if (hexadecimal.length > 6) {
-      div_resultados_hexadecimal_caixaColorida_caixaTexto.innerHTML = `<p style = 'background-color: #F2CC8F'>Não existe cor com hexadecimal #${hexadecimalCor}</p>`;
+      div_resultados_hexadecimal_caixaColorida_caixaTexto.innerHTML = `<span style = 'background-color: #F2CC8F'>Não existe cor com hexadecimal #${hexadecimalCor}</span>`;
     } else {
-      div_resultados_hexadecimal_caixaColorida_caixaTexto.innerHTML = `<p style = 'background-color: #${hexadecimalCor}'>#${hexadecimalCor}</p>`;
+      div_resultados_hexadecimal_caixaColorida_caixaTexto.innerHTML = `<span style = 'background-color: #${hexadecimalCor}'>#${hexadecimalCor}</span>`;
     }
   }
 </script>
